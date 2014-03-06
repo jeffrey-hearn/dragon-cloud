@@ -1,7 +1,5 @@
 {
 	"globals": {
-		"title": "Acme Site",
-		"name"  : "John Doe",
-		"uri": "http://example.com"
+		"title": "The New Classic of Tea"
 	}
 }
