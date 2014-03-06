@@ -1,5 +1,26 @@
 {
 	"globals": {
-		"title": "The New Classic of Tea"
+
+		"title": "Steeped: A Tea Encycliopedia",
+
+		"nav": {
+			"items": {
+				"atlas": {
+					"title": "Atlas",
+					"items": {
+						"india": {
+							"title": "India"
+						},
+						"china": {
+							"title": "China"
+						}
+					}
+				},
+				"glossary": {
+					"title": "Glossary"
+				}
+			}
+		}
+
 	}
 }
