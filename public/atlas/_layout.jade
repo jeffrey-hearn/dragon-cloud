@@ -1,0 +1,15 @@
+doctype
+html.atlas
+	head
+		!= partial("../_partials/_header-main")
+		!= partial("../_partials/_header-atlas")
+
+	body
+		!= partial("../_partials/_nav-main")
+
+		div.container
+			div.row
+				!= yield
+
+		!= partial("../_partials/_footer-main")
+		!= partial("../_partials/_footer-atlas")

@@ -1,18 +1,40 @@
 {
 	"globals": {
 
-		"title": "Steeped: A Tea Encycliopedia",
+		"title": "Steeped: a Tea Encycliopedia",
 
 		"nav": {
 			"items": {
 				"atlas": {
 					"title": "Atlas",
+					"overview": "Overview of Tea Regions",
 					"items": {
 						"india": {
 							"title": "India"
 						},
 						"china": {
 							"title": "China"
+						}
+					}
+				},
+				"history": {
+					"title": "History",
+					"overview": "Overview of the History of Tea",
+					"items": {
+						"ancient": {
+							"title": "The Ancient World (Before 618 C.E.)"
+						},
+						"tang": {
+							"title": "Tang Dynasty and Uphevals (618 – 960 C.E.)"
+						},
+						"song": {
+							"title": "Song Dynasty (960 – 1279 C.E.)"
+						},
+						"yuan-ming": {
+							"title": "Yuan and Ming Dynasties (1271 – 1644 C.E.)"
+						},
+						"colonial": {
+							"title": "Yuan and Ming Dynasties (1271 – 1644 C.E.)"
 						}
 					}
 				},

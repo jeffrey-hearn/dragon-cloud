@@ -22,7 +22,7 @@ nav.navbar.navbar-default(role="navigation")
 								b.caret
 							ul.dropdown-menu
 								li
-									a(href="/"+slug+"/") Overview
+									a(href="/"+slug+"/")= item.overview
 								each subitem, subslug in item.items
 									li
 										a(href="/" + slug + "/" + subslug + "/" )= subitem.title
