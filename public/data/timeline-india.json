@@ -1,0 +1,39 @@
+{
+	"date": [
+		{
+			"startDate":"1858,08,02",
+			"endDate":"1858,08,02",
+			"headline":"Government of India Act 1858",
+			"text":"<p>Control of the Government of India is transferred from the East India Company to the British Crown.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Government_of_India_Act_1858'>Wikipedia (Government of India Act 1858)</a></p>",
+			"tag":"Optional Tag",
+			"classname":"political",
+			"asset": {
+				"thumbnail":"http://placekitten.com/32/32"
+			}
+		},
+		{
+			"startDate":"1947,08,15",
+			"endDate":"1947,08,15",
+			"headline":"The Mountbatten Plan",
+			"text":"<p>The partition of India begins the transfer of power to new sovreign states once held by the British Raj.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Partition_of_India'>Wikipedia (Partition of India)</a></p>",
+			"tag":"Optional Tag",
+			"classname":"political",
+			"asset": {
+				"thumbnail":"http://placekitten.com/32/32"
+			}
+		}
+	],
+	"era": [
+		{
+			"startDate":"1858,08,02",
+			"endDate":"1947,08,15",
+			"headline":"British Raj",
+			"text":"<p>British rule in the Indian subcontinent</p>",
+			"tag":"Optional Tag"
+		}
+
+	]
+}
+
+
+

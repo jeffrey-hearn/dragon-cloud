@@ -4,9 +4,10 @@ html.history
 		!= partial("../_partials/_header-main")
 		!= partial("../_partials/_header-history")
 
-	body
+	body(data-timeline=current.source)
 		!= partial("../_partials/_nav-main")
 
+		div#timeline-embed
 		div.container
 			div.row
 				div.col-md-7.col-md-offset-1
