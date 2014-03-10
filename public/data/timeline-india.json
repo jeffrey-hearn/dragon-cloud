@@ -1,11 +1,34 @@
 {
 	"date": [
 		{
+			"startDate":"1757, 06, 23",
+			"headline":"Battle of Plassey",
+			"text":"<p>The defeat of the last independent ruler brings Bengal under the control of the East India Company.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Battle_of_Plassey'>Wikipedia (Battle of Plassey)</a></p>",
+			"tag":"Political Events",
+			"classname":"political",
+			"asset": {
+				"thumbnail":"http://placekitten.com/32/32"
+			}
+		},
+		{
+			"startDate":"1773, 06, 21",
+			"endDate":"1773, 06, 21",
+			"headline":"Regulating Act of 1773",
+			"text":"<p>Due to debt and mismanagement of the East India Company, Britain consolidates and reforms Company rule in India.</p><p class='timeline-source'>John F. Riddick, The History of British India: A Chronology (Greenwood Publishing Group, 2006), 21.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Regulating_Act_of_1773'>Wikipedia (Regulating Act of 1773)</a></p>",
+			"tag":"Political Events",
+			"classname":"political",
+			"asset": {
+				"media":"/assets/img/regulating-act-thumb.png",
+				"thumbnail":"/assets/img/regulating-act-icon.png",
+				"caption": "The Regulating Act as printed in a contemporary edition of <a href='http://en.wikipedia.org/wiki/Statutes_at_Large'>Statutes at Large</a>"
+			}
+		},
+		{
 			"startDate":"1858,08,02",
 			"endDate":"1858,08,02",
 			"headline":"Government of India Act 1858",
 			"text":"<p>Control of the Government of India is transferred from the East India Company to the British Crown.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Government_of_India_Act_1858'>Wikipedia (Government of India Act 1858)</a></p>",
-			"tag":"Optional Tag",
+			"tag":"Political Events",
 			"classname":"political",
 			"asset": {
 				"thumbnail":"http://placekitten.com/32/32"
@@ -16,7 +39,7 @@
 			"endDate":"1947,08,15",
 			"headline":"The Mountbatten Plan",
 			"text":"<p>The partition of India begins the transfer of power to new sovreign states once held by the British Raj.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Partition_of_India'>Wikipedia (Partition of India)</a></p>",
-			"tag":"Optional Tag",
+			"tag":"Political Events",
 			"classname":"political",
 			"asset": {
 				"thumbnail":"http://placekitten.com/32/32"
@@ -28,8 +51,13 @@
 			"startDate":"1858,08,02",
 			"endDate":"1947,08,15",
 			"headline":"British Raj",
-			"text":"<p>British rule in the Indian subcontinent</p>",
-			"tag":"Optional Tag"
+			"text":"<p>British rule in the Indian subcontinent</p>"
+		},
+		{
+			"startDate":"1757, 06, 23",
+			"endDate":"1858,08,02",
+			"headline":"East India Company Rule",
+			"text":"<p>East India Company rule in India</p>"
 		}
 
 	]

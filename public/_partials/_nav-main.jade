@@ -1,7 +1,8 @@
 
 // Bootstrap Navbar
+
 nav.navbar.navbar-default(role="navigation")
-	div.container-fluid
+	div.container
 
 		// Brand and toggle get grouped for better mobile display
 		div.navbar-header
@@ -22,10 +23,10 @@ nav.navbar.navbar-default(role="navigation")
 								b.caret
 							ul.dropdown-menu
 								li
-									a(href="/"+slug+"/")= item.overview
+									a(href="/"+slug)= item.overview
 								each subitem, subslug in item.items
 									li
-										a(href="/" + slug + "/" + subslug + "/" )= subitem.title
+										a(href="/"+slug+"/"+subslug)= subitem.title
 					else
 						li
-							a(href="/"+slug+"/")=item.title
+							a(href="/"+slug)=item.title
