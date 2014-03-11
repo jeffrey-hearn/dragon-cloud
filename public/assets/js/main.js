@@ -53,7 +53,8 @@ $(function() {
 					return (this.top = offsetTop + 60);
 				}
 			}
-		})
+		});
+		$sideBar.width( $sideBar.width() );
 	}, 200);
 
 
