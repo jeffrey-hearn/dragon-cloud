@@ -1,0 +1,27 @@
+{
+	"india-tea-plantation-by-tornado-twister": {
+		"title": "",
+		"original": {
+			"file": "india-tea-plantation-by-tornado-twister.jpg",
+			"width": 3456,
+			"height": 2592,
+			"weight": 9.3
+		},
+		"large": {
+			"file": "india-tea-plantation-by-tornado-twister-large.png",
+			"width": 3456,
+			"height": 2274,
+			"weight": 16.7
+		},
+		"medium": {
+			"file": "india-tea-plantation-by-tornado-twister-medium.png",
+			"width": 1600,
+			"height": 1053,
+			"weight": 3.7
+		},
+		"attribution": "<a href='http://www.flickr.com/photos/manu_ndd/4275959130/'>Photo</a> by <a href='http://www.flickr.com/photos/manu_ndd/'>tornado_twister</a> via Flickr",
+		"license": "<a href='http://creativecommons.org/licenses/by/2.0/'>Creative Commons Attribution</a>",
+		"sourceurl": "http://www.flickr.com/photos/manu_ndd/4275959130/",
+		"modifications": "Removed black bars at top and bottom of image."
+	}
+}

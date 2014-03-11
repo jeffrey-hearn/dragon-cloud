@@ -2,6 +2,10 @@
 /* MAIN
 -------------------------------------------------- */
 
+.navbar.navbar-default { margin-bottom: 0px; }
+
+
+
 
 
 /* CONTENT ASIDE
@@ -35,7 +39,7 @@
 -------------------------------------------------- */
 
 /* All levels of nav */
-.page-nav-container-container .nav > li > a {
+.page-nav-container .nav > li > a {
 	display: block;
 	padding: 4px 20px;
 	font-size: 13px;
@@ -62,7 +66,7 @@
 
 /* Nav: second level (shown on .active) */
 .page-nav-container .nav .nav {
-	display: none; /* Hide by default, but at >768px, show it */
+	/* display: none; Hide by default, but at >768px, show it */
 	padding-bottom: 10px;
 }
 .page-nav-container .nav .nav > li > a {
@@ -84,8 +88,8 @@
 }
 	@media (min-width: 992px){
 		.page-nav-container.affix-top { margin-top: 80px; }
-		.page-nav-container.affix { top: 10px; }
-		.page-nav-container .nav > .active > ul { display: block; }
+		.page-nav-container.affix { top: 20px; }
+		/* .page-nav-container .nav > .active > ul { display: block; } */
 	}
 
 
@@ -97,10 +101,12 @@
 
 
 
-
-
-
-
+/* SEXY HEADING
+-------------------------------------------------- */
+.heading-background { background-size: 100%; margin-bottom: 10px; }
+	.intro-container { margin-top: 200px; padding: 0 30px 10px 30px; margin-bottom: 50px; background-color: white; opacity: 0.8; }
+		h1.sexy-heading { font-size: 80px; }
+	.heading-attribution { position: relative; padding: 3px 10px; margin: 0 0 -10px 0; height: 20px; font-size: 10px;  background-color: black; color: #ccc; }
 /*
 xs
 @media (max-width: 767px) { ... }
