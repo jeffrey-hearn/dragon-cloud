@@ -4,12 +4,10 @@ html.atlas
 		!= partial("../_partials/_header-main")
 		!= partial("../_partials/_header-atlas")
 
-	body
+	body(data-atlas=current.source)
 		!= partial("../_partials/_nav-main")
 
-		div.container
-			div.row
-				!= yield
+		!= yield
 
 		!= partial("../_partials/_footer-main")
 		!= partial("../_partials/_footer-atlas")
