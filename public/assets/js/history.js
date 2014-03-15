@@ -7,7 +7,7 @@ $(function() {
 	// Timeline meta
 	var timelineMeta = {
 		"index": {
-			"title": "Tea Through Time",
+			"title": "The History of Tea",
 			"description": "<p>Drag to move the timeline. Events are grouped by type: Political, Cultural, and Economic</p>",
 			"files": [ "india" ]
 		},
@@ -43,23 +43,30 @@ $(function() {
 
 	// Combine timeline data files into a single list
 	$.each( timelineMeta[timelineSlug].files, function( i, file ) {
-		$.getJSON( siteGlobals.basedir + "data/timeline-"+file+".json", function( data ) {
+		$.getJSON( siteGlobals.path + "data/timeline-"+file+".json", function( data ) {
+
+			// If a local asset, prefix the filename with a domain and path
+			// (meant to ease the use of a CDN)
+			function prepDate ( date ) {
+				if ('asset' in date && 'media' in date.asset && 'thumbnail' in date.asset && date.asset.media.slice(0,6) == "assets") {
+					date.asset.media = siteGlobals.domain + siteGlobals.path + date.asset.media;
+					date.asset.thumbnail = siteGlobals.domain + siteGlobals.path + date.asset.thumbnail;
+				}
+				return date;
+			}
+			
 			$.each( data.date, function( i, date ) {
-				timelineObj.timeline.date.push( date );
+				timelineObj.timeline.date.push( prepDate(date) );
 			});
 			$.each( data.era, function( i, era ) {
 				timelineObj.timeline.era.push( era );
 			});
-			console.log(timelineObj);
 
 			// Attach the timeline data
 			timelineConfigMd.source = timelineObj;
 
 			// Render the timeline
 			createStoryJS( timelineConfigMd );
-
-			// Render tweaks
-			//$("#timeline-embed .era div").addClass();
 		});
 	});
 

@@ -1,12 +1,4 @@
 
-/* GLOBALS
--------------------------------------------------- */
-var siteGlobals = {
-	"basedir": "/",
-	"font": "Open Sans"
-};
-
-
 $(function() {
 
 	/* SECONDARY MENU

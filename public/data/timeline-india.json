@@ -7,6 +7,7 @@
 			"tag":"Political Events",
 			"classname":"political",
 			"asset": {
+				"media":"http://placekitten.com/300/300",
 				"thumbnail":"http://placekitten.com/32/32"
 			}
 		},
@@ -18,8 +19,8 @@
 			"tag":"Political Events",
 			"classname":"political",
 			"asset": {
-				"media":"/assets/img/regulating-act-thumb.png",
-				"thumbnail":"/assets/img/regulating-act-icon.png",
+				"media":"assets/img/regulating-act-thumb.png",
+				"thumbnail":"assets/img/regulating-act-icon.png",
 				"caption": "The Regulating Act as printed in a contemporary edition of <a href='http://en.wikipedia.org/wiki/Statutes_at_Large'>Statutes at Large</a>"
 			}
 		},
@@ -30,9 +31,7 @@
 			"text":"<p>Control of the Government of India is transferred from the East India Company to the British Crown.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Government_of_India_Act_1858'>Wikipedia (Government of India Act 1858)</a></p>",
 			"tag":"Political Events",
 			"classname":"political",
-			"asset": {
-				"thumbnail":"http://placekitten.com/32/32"
-			}
+			"asset": {}
 		},
 		{
 			"startDate":"1947,08,15",
@@ -41,9 +40,7 @@
 			"text":"<p>The partition of India begins the transfer of power to new sovreign states once held by the British Raj.</p><p class='timeline-source'><a href='http://en.wikipedia.org/wiki/Partition_of_India'>Wikipedia (Partition of India)</a></p>",
 			"tag":"Political Events",
 			"classname":"political",
-			"asset": {
-				"thumbnail":"http://placekitten.com/32/32"
-			}
+			"asset": {}
 		}
 	],
 	"era": [

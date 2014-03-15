@@ -3,7 +3,9 @@
 
 		"sitetitle": "Steeped: a Tea Encycliopedia",
 
-		"cloudfront": "d1ax4rozvssoit.cloudfront.net",
+		"domain": "//d1ax4rozvssoit.cloudfront.net",
+
+		"path": "/",
 
 		"nav": {
 			"items": {
