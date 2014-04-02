@@ -1,0 +1,10 @@
+{
+	"sample-book": {
+		"title": "The Tea Book",
+		"isbn": "456555654",
+		"author": "Ballard, John.",
+		"publisher": "Pike Street Press",
+		"year": "1589",
+		"url": "http://www.amazon.com"
+	}
+}
