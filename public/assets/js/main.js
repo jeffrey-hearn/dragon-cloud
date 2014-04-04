@@ -14,37 +14,40 @@ $(function() {
 	// Get reference data
 	$.getJSON( siteGlobals.path + "data/references.json", function( refs ) {
 		// housekeeping
-		var noteIndex = 0,
-		    refIDs = [];
+		var refIDs = [];
 		// Check for inline citations
 		if ( $('sup[data-ref-id!=""]') ){
 			// Add a header to the section
 			var endnotes = $('#references').before('<h2 class="ref-header">References</h2>');
 			// Iterate over inline citations
 			$('sup[data-ref-id]').each(function(i){
-				var refID = $(this).data('ref-id');
+				var refID = $(this).data('ref-id'),
+				    citationIndex = i + 1;
 				// Check if the reference item has been referenced yet
 				if ( $.inArray( refID, refIDs ) == -1 ){
-					// Add the reference to the list, increment the notes
+					// Add the reference to the list
 					refIDs.push(refID);
-					noteIndex++;
-					// Create a reference item with link back to citation
-					endnotes.append( '<li class="ref-item small" id="ref-item-'+noteIndex+'">' + 
-						'<a href="#ref-citation-'+noteIndex+'" class="ref-item-reciprocal-link"><span class="glyphicon glyphicon-arrow-up"></span></a> ' + 
-						refs[ refID ].title + '</li>' );
-					// Add a link to the reference, text for the citation, and tooltip text.
-					// (since this is an async block, must init tooltips explicitly rather 
-					// than use the catch-all since it will have already completed)
-					$(this)
-						.attr('data-toggle', 'tooltip')
-						.attr('id', 'ref-citation-'+noteIndex)
-						.attr('data-placement', 'top')
-						.attr('title', refs[ refID ].title)
-						.append('<a href="#ref-item-'+noteIndex+'">'+noteIndex+'</a>')
-						.tooltip();
+					// Create a reference item
+					endnotes.append( '<li class="ref-item small" id="ref-item-'+refIDs.length+'">' + 
+						refs[ refID ].title +
+						'<ul class="ref-item-citations"></ul>' +
+						'</li>' );
 				} else {
 					// Insert the two reciprocal links? Sublist of citations?
 				}
+				$('#ref-item-'+refIDs.length+' .ref-item-citations')
+					.append('<li class=""><a href="#ref-citation-'+citationIndex+'" class="ref-item-reciprocal-link"><span class="glyphicon glyphicon-arrow-up"></span></a> '+ $(this).data('citation-note') +'</li>');
+
+				// Add a link to the reference, text for the citation, and tooltip text.
+				// (since this is an async block, must init tooltips explicitly rather 
+				// than use the catch-all since it will have already completed)
+				$(this)
+					.attr('data-toggle', 'tooltip')
+					.attr('id', 'ref-citation-'+citationIndex)
+					.attr('data-placement', 'top')
+					.attr('title', refs[ refID ].title + ' ' + $(this).data('citation-note'))
+					.append('<a href="#ref-item-'+refIDs.length+'">'+citationIndex+'</a>')
+					.tooltip();
 			});
 		}
 
